@@ -1,5 +1,5 @@
 # resume
-LaTeX template for my resume
+Resume in LaTeX
 
 Based off of [harshibar/resume](https://github.com/harshibar/resume)
 
