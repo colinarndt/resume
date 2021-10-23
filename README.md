@@ -1,6 +1,5 @@
-# resume
-Resume in LaTeX
+# Resume
 
-Based off of [harshibar/resume](https://github.com/harshibar/resume). Template is available at that link if you'd like to use this style for your own.
+Based off of [harshibar/resume](https://github.com/harshibar/resume). Template is available at that link if you'd like to modify for your own use.
 
 ![Resume Preview](resume.png)
