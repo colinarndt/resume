@@ -7,7 +7,6 @@
 % TODO
 % URL-ify top links
 % Add GitHublinks to projects
-% Strengthen final experience section - add metrics
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -19,10 +18,10 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
 % only for pdflatex
 % \input{glyphtounicode}
 
@@ -143,12 +142,14 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge Colin Arndt} \\ \vspace{5pt}
-    \small Data Scientist | San Diego, CA   \\ \vspace{3pt} 
+    \small 
+    % Data Scientist | San Diego, CA  \\ \vspace{3pt} 
     %\& Quantitative Analyst
-    \faPhone \hspace{2pt}{858.281.3748} \hspace{2pt} 
-    \hspace{1pt} \faEnvelope \hspace{3pt}{colin.f.arndt@gmail.com} \hspace{2pt}  
-    \hspace{1pt} \faLinkedin \hspace{3pt}{colinarndt}} \hspace{2pt}
-     \hspace{1pt} \faGithub \hspace{0pt} {colinarndt} 
+    \faPhone \hspace{2pt}{858.281.3748} \hspace{1pt}|
+    \hspace{1pt} \faEnvelope \hspace{3pt}{colin.f.arndt@gmail.com} \hspace{1pt}| 
+    \hspace{1pt} \faLinkedin \hspace{3pt}{colinarndt} \hspace{1pt} |
+    \hspace{1pt}{San Diego, CA}
+%    \hspace{1pt} \faGithub   \hspace{3pt}{colinarndt} 
     \\ \vspace{-3pt}
 \end{center}
 
@@ -156,7 +157,7 @@
 \section {SUMMARY}
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-      Earning Masters Degree in Data Science \& Financial Technology at the University of London, graduating September 2022, with coursework in Applied Statistics, Linear Algebra, Regression Analysis, Machine Learning, Big Data, Neural Networks, Data Visualization, Financial Markets and Modeling, and Blockchain Programming. Skilled in extracting meaningful information from raw data, developing machine-learning models to forecast trends and communicating insights to a range of stakeholders so they can make confident data-driven decisions. 
+      Earning Masters Degree in Data Science \& Financial Technology at the University of London, graduating March 2023, with coursework in Applied Statistics, Linear Algebra, Regression Analysis, Machine Learning, Big Data, Neural Networks, Data Visualization, Financial Markets and Modeling, and Blockchain Programming. Skilled in extracting meaningful information from raw data, developing machine-learning models to forecast trends and communicating insights to a range of stakeholders so they can make confident data-driven decisions. 
       %Quantitative strategies to inform securities investing, pricing, and valuation of financial instruments as well as statistical models for risk management, asset optimization and relative value analysis. 
       Track record of delivering the highest quality solutions to resolve challenges and propel business growth.
     }}
@@ -166,11 +167,10 @@
 
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-   %   \textbf{Coursework}{: Applied Statistics, Linear Algebra, Regression Analysis, Machine Learning, Big Data, Neural Networks, \linebreak Data Visualization, Financial Markets and Modeling, Blockchain Programming}\vspace{2pt} \\      
-      \textbf{Languages}{: Python, SQL, Bash, HTML, CSS}\vspace{2pt} \\
+      \textbf{Languages}{: Python, SQL, BASH, HTML, CSS}\vspace{2pt} \\
      \textbf{Libraries}{: Numpy, Pandas, Sklearn, Keras, TensorFlow, Plotly, Matplotlib, BeautifulSoup, OpenCV}\vspace{2pt} \\
-     \textbf{Tools}{: Jupyter, Hadoop, Spark, Google Analytics, Git, Anaconda} 
-     %MATLAB}}
+     \textbf{Tools}{: AWS, Spark, Jupyter, Git, Google Analytics, Anaconda}}} 
+     %Docker, AWS, MATLAB
  \end{itemize}
  
 %-----------PROJECTS-----------
@@ -178,9 +178,10 @@
 \section{PROJECTS}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Evaluating Bitcoin's Correlation with Traditional Assets before and after the March 2020 Crash}} {Nov. 2020 -- Dec. 2020}
+          {\textbf{Evaluating Asset Correlations before and after the March 2020 Crash}} {Nov. 2020 -- Dec. 2020}
           \resumeItemListStart
-          \resumeItem{Imported, cleaned and validated price data for the major assets using Yfinance, Python, Numpy and Pandas}
+          \resumeItem{Imported, cleaned and validated price data for major asset classes using Python, Numpy, Pandas and Yfinance
+            }
             \resumeItem{Presented analysis using Rolling correlation window plots with Matplotlib and Heatmaps with Seaborn}
           \resumeItemListEnd
 
@@ -197,56 +198,74 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Pilates on Harrison}{Remote}
-      {Marketing and Business Intelligence Analyst} {Nov. 2018 -- May 2021}
+      {Nuveen, A TIAA Company}{Remote}
+      {Technical Associate} {Jan. 2022 -- Present}
       \resumeItemListStart
-        \resumeItem{Offered partnership share in recognition of outstanding contributions to business}
+        \resumeItem{Transforming and migrating over 13,000 portfolio files from on-premise archive to AWS}
 %        \resumeItem{Advised successful transition to online service delivery during COVID crisis, with no loss in monthly revenue}
-         \resumeItem{Implemented client surveys, processing results from 200+ responses with key conclusions}
+         %\resumeItem{}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Pilates on Harrison}{Remote}
+      {Marketing and Analytics} {Nov. 2018 -- May 2021}
+      \resumeItemListStart
+         \resumeItem{Set business KPIs and implemented marketing strategy resulting in 2x online subscribers over 5 months}
+         \resumeItem{Offered partnership share in recognition of outstanding contributions to business}
+%        \resumeItem{Advised successful transition to online service delivery during COVID crisis, with no loss in monthly revenue}
+
       \resumeItemListEnd
 
     \resumeSubheading
         {Mac Tonic}{Eugene, OR}
-        {Chief People Officer}{Feb. 2018 -- Sept. 2019}
+        {Manager}{Nov. 2015 -- Sept. 2019}
       \resumeItemListStart
-        \resumeItem{Hired and trained 5-member team, maintaining a culture of inclusion and respect for all types of people}
+        \resumeItem{Hired and trained 5-member technician team, maintaining a culture of inclusion and respect for all types of people}
         \resumeItem{Overhauled service documentation system resulting in 20\% increase in staff efficiency}
     \resumeItemListEnd
-    \vspace{-20pt}
-    \resumeSubheading   
-        {}{}{Lead Support Specialist}{Nov. 2015 -- Jan. 2018}
-      \resumeItemListStart
-        \resumeItem{Diagnosed and resolved the most challenging customer issues across hardware, software and services}        \resumeItem{Automated and streamlined diagnostic procedures, yielding 25\% increase in service profits}
+%    \vspace{-20pt}
+%    \resumeSubheading   
+%        {}{}{Lead Support Specialist}{Nov. 2015 -- Jan. 2018}
+%      \resumeItemListStart
+%        \resumeItem{Diagnosed and resolved the most challenging customer issues across hardware, software and services}        \resumeItem{Automated and streamlined diagnostic procedures, yielding 25\% increase in service profits}
 
-    \resumeItemListEnd
+%    \resumeItemListEnd
 
-    \resumeSubheading
+   \resumeSubheading
       {C3 IT Solutions}{Madison, WI}
-      {Computer Support Specialist}{Sept. 2007 -- Nov. 2015}
-      \resumeItemListStart
-        \resumeItem{Consulted on solutions for data backups and security, virtualization, kiosk devices, VPNs and more}
-        \resumeItem{Developed front-end websites in WordPress and Drupal with ecommerce and CRM functionality}
-%        \resumeItem{Provided Search Engine Optimization and Online Reputation Management services}
-      \resumeItemListEnd
+       {Owner and Tech Support Specialist}{Sept. 2012 -- Nov. 2015}
+       \resumeItemListStart
+         \resumeItem{Consulted on solutions for data backups and security, virtualization, kiosk devices, VPNs and more}
+        \resumeItem{Developed front-end websites and provided search Engine Optimization services}
+        %\resumeItem{Developed front-end websites in WordPress and Drupal with ecommerce and CRM functionality}
+        %\resumeItem{Provided Search Engine Optimization and Online Reputation Management services}
+       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
+%-----------CERTIFICATIONS-----------
+\section {CERTIFICATIONS}
+    \resumeSubheading
+      {AWS Certified Solutions Architect}{Anticipated Feb. 2022}
+      {Associate Level}{}    
 
-
-%-----------EDUCATION-----------
-\section {EDUCATION}
-  \resumeSubHeadingListStart
 %    \resumeSubheading
-%     {M.S. Data Science and Financial Technology}{Oct. 2020 -- Sept. 2022}
+%      {AWS Certified Developer}{April 2022}
+%      {Associate Level}{}  
+%-----------EDUCATION-----------
+%\section {EDUCATION}
+%  \resumeSubHeadingListStart
+%    \resumeSubheading
+%     {M.S. Data Science and Financial Technology}{Oct. 2020 -- Mar. 2023}
 %       {University of London}{Remote}
 %      	\resumeItemListStart
     	%\resumeItem {Coursework: Applied Statistics, Linear Algebra, Regression Analysis, Financial Markets and Modeling, Blockchain Programming}
 %        \resumeItemListEnd
   
-    \resumeSubheading
-      {B.A. Psychology}{}
-      {Sonoma State University}{Cotati, CA}    
-  \resumeSubHeadingListEnd
+%    \resumeSubheading
+%      {B.A. Psychology}{}
+%      {Sonoma State University}{Cotati, CA}    
+%  \resumeSubHeadingListEnd
 
 
 
