@@ -1,12 +1,11 @@
 %-------------------------
 % Resume in Latex
-% Author : Harshibar
+% Author : Colin Arndt
 % Based off of: https://github.com/jakeryang/resume
 % License : MIT
 
 % TODO
 % URL-ify top links
-% Add GitHublinks to projects
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -147,9 +146,12 @@
     %\& Quantitative Analyst
     \faPhone \hspace{2pt}{858.281.3748} \hspace{1pt}|
     \hspace{1pt} \faEnvelope \hspace{3pt}{colin.f.arndt@gmail.com} \hspace{1pt}| 
-    \hspace{1pt} \faLinkedin \hspace{3pt}{colinarndt} \hspace{1pt} |
-    \hspace{1pt}{San Diego, CA}
-%    \hspace{1pt} \faGithub   \hspace{3pt}{colinarndt} 
+    \hspace{1pt}{Charlotte, NC}
+    \vspace{2pt} \\
+    \hspace{1pt} \faLinkedin \hspace{3pt}{linkedin.com/in/colinarndt} \hspace{1pt} |
+    \hspace{1pt} \faGithub   \hspace{3pt}{github.com/colinarndt}  
+
+
     \\ \vspace{-3pt}
 \end{center}
 
@@ -157,9 +159,9 @@
 \section {SUMMARY}
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-      Earning Masters Degree in Data Science \& Financial Technology at the University of London, graduating March 2023, with coursework in Applied Statistics, Linear Algebra, Regression Analysis, Machine Learning, Big Data, Neural Networks, Data Visualization, Financial Markets and Modeling, and Blockchain Programming. Skilled in extracting meaningful information from raw data, developing machine-learning models to forecast trends and communicating insights to a range of stakeholders so they can make confident data-driven decisions. 
+      
       %Quantitative strategies to inform securities investing, pricing, and valuation of financial instruments as well as statistical models for risk management, asset optimization and relative value analysis. 
-      Track record of delivering the highest quality solutions to resolve challenges and propel business growth.
+       Developer with Data Science skillset and diverse IT background. Recent highlights include migrating applications to AWS, automation of data QA testing, productionalizing report pipelines, as well as mentorship and technical team leadership. Currently finishing MSc in Data Science with the University of London, on track to graduate with distinction in March 2024. Coursework in Applied statistics, Linear algebra, Regression analysis, Machine learning, Big data, Neural networks, Data visualization, Financial markets and modeling, and Blockchain programming.  
     }}
  \end{itemize}
 
@@ -167,61 +169,46 @@
 
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-      \textbf{Languages}{: Python, SQL, BASH, HTML, CSS}\vspace{2pt} \\
-     \textbf{Libraries}{: Numpy, Pandas, Sklearn, Keras, TensorFlow, Plotly, Matplotlib, BeautifulSoup, OpenCV}\vspace{2pt} \\
-     \textbf{Tools}{: AWS, Spark, Jupyter, Git, Google Analytics, Anaconda}}} 
+     \textbf{Top Skills}{: Cloud migrations, OOP, SDLC, Automation, Financial data modelling, AI \& Machine learning, Mentoring}\vspace{2pt} \\
+     \textbf{Technologies}{: Python, SQL (Microsoft and Oracle), AWS, Snowflake, Docker, Spark, Linux, Perl, BASH, Git}}} 
      %Docker, AWS, MATLAB
  \end{itemize}
  
-%-----------PROJECTS-----------
-
-\section{PROJECTS}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Evaluating Asset Correlations before and after the March 2020 Crash}} {Nov. 2020 -- Dec. 2020}
-          \resumeItemListStart
-          \resumeItem{Imported, cleaned and validated price data for major asset classes using Python, Numpy, Pandas and Yfinance
-            }
-            \resumeItem{Presented analysis using Rolling correlation window plots with Matplotlib and Heatmaps with Seaborn}
-          \resumeItemListEnd
-
-       \resumeProjectHeading
-         {\textbf{Building an n-fold Cross Validation K-Nearest Neighbor Classifier from Scratch}}{June 2021 - July 2021}
-     \resumeItemListStart
-        \resumeItem{Implemented a full k-NN classification pipeline, including classifier evaluation, without relying on sklearn libraries} 
-        \resumeItem{Provided automatic detection and selection of optimum parameter values}
-      \resumeItemListEnd     
-    \resumeSubHeadingListEnd
-
 %-----------EXPERIENCE-----------
-\section{EXPERIENCE}
+\section{PROFESSIONAL EXPERIENCE}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Nuveen, A TIAA Company}{Remote}
-      {Technical Associate} {Jan. 2022 -- Present}
+      {Nuveen}{Charlotte, NC}
+      {Technical Associate, Developer} {Jan. 2022 -- Present}
       \resumeItemListStart
-        \resumeItem{Transforming and migrating over 13,000 portfolio files from on-premise archive to AWS}
-%        \resumeItem{Advised successful transition to online service delivery during COVID crisis, with no loss in monthly revenue}
-         %\resumeItem{}
+        \resumeItem{Developed in-house data comparison tool in Python to automate data testing for NDW migration from Oracle to Snowflake, capable of efficiently validating millions of rows from daily batch loads, now in use by multiple teams.}
+        \resumeItem{Migrated a legacy accounting application to AWS and developed a dashboard in QuickSight for querying archived data, saving over \$25,000 annually.}
+        \resumeItem{Socialized above applications in 2 separate Feast your Mind sessions to 200 total associates in Nuveen Tech, and consulted others how to implement in their teams.}
+        \resumeItem{Developed and productionalized a key report showing debt leverages of LevFin portfolio companies, allowing PMs to evaluate holding health on a weekly basis, after working with API vendor to enhance data richness.}
+        \resumeItem{Maintained Front Office Equity PM applications in Python and Perl.}
+        \resumeItem{As councilmember for the Technical Associate program, oversaw TA mentorship program and sent regular surveys to assess associate experience.}   
+        \resumeItem{Developing a SharePoint site for the TA program to improve outcomes for all stakeholders: technical associates, business liaisons and people leaders.}      
+        
       \resumeItemListEnd
 
     \resumeSubheading
       {Pilates on Harrison}{Remote}
-      {Marketing and Analytics} {Nov. 2018 -- May 2021}
+      {Marketing and Analytics Director, Partner} {Nov. 2018 -- May 2021}
       \resumeItemListStart
-         \resumeItem{Set business KPIs and implemented marketing strategy resulting in 2x online subscribers over 5 months}
-         \resumeItem{Offered partnership share in recognition of outstanding contributions to business}
+         \resumeItem{Set business KPIs and implemented marketing strategy resulting in 2x online subscribers over 5 months.}
+          \resumeItem{Advised on company rebrand including updated mission and vision.}
+          \resumeItem{Offered partnership share due to business results and ownership mentality.}
 %        \resumeItem{Advised successful transition to online service delivery during COVID crisis, with no loss in monthly revenue}
-
       \resumeItemListEnd
 
     \resumeSubheading
         {Mac Tonic}{Eugene, OR}
-        {Manager}{Nov. 2015 -- Sept. 2019}
+        {Lead Technician, Manager}{Nov. 2015 -- Sept. 2019}
       \resumeItemListStart
-        \resumeItem{Hired and trained 5-member technician team, maintaining a culture of inclusion and respect for all types of people}
-        \resumeItem{Overhauled service documentation system resulting in 20\% increase in staff efficiency}
+        \resumeItem{Hired and trained 5-member technician team, fostering a culture of inclusion and respect for all types of people.}
+        \resumeItem{Automated and streamlined diagnostic procedures, yielding higher service profits and lower turnaround times.}
+        \resumeItem{Overhauled service documentation system resulting in lower incidence of customer issue recurrence.}
     \resumeItemListEnd
 %    \vspace{-20pt}
 %    \resumeSubheading   
@@ -231,37 +218,79 @@
 
 %    \resumeItemListEnd
 
-   \resumeSubheading
-      {C3 IT Solutions}{Madison, WI}
-       {Owner and Tech Support Specialist}{Sept. 2012 -- Nov. 2015}
-       \resumeItemListStart
-         \resumeItem{Consulted on solutions for data backups and security, virtualization, kiosk devices, VPNs and more}
-        \resumeItem{Developed front-end websites and provided search Engine Optimization services}
+   %\resumeSubheading
+    %  {C3 IT Solutions}{Madison, WI}
+    %   {Owner and Tech Support Specialist}{Sept. 2012 -- Nov. 2015}
+    %   \resumeItemListStart
+    %     \resumeItem{Consulted on solutions for data backups and security, virtualization, kiosk devices, VPNs and more}
+    %    \resumeItem{Developed front-end websites and provided search Engine Optimization services}
         %\resumeItem{Developed front-end websites in WordPress and Drupal with ecommerce and CRM functionality}
         %\resumeItem{Provided Search Engine Optimization and Online Reputation Management services}
-       \resumeItemListEnd
+    %   \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
+%-----------PROJECTS-----------
+
+\section{ACADEMIC HIGHLIGHTS}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Assessing the 60-40 Portfolio Allocation by Examining US Stock and Bond Returns since 1793}} {Nov. 2020 -- Dec. 2020}
+          \resumeItemListStart
+          \resumeItem{Implemented a portfolio simulator based on inflation-adjusted returns over 35-year accumulation periods.}
+            \resumeItem{Built a variety of interactive plots to present insights into market history as well as retirement portfolio simulations.}
+          \resumeItemListEnd
+          
+          
+      \resumeProjectHeading
+          {\textbf{Predicting Real Estate Prices with Deep Learning}} {Nov. 2020 -- Dec. 2020}
+          \resumeItemListStart
+          \resumeItem{Engineered a neural network layer-by-layer in TensorFlow to predict real estate valuations based on public data.}
+            \resumeItem{Wrote an optimization algorithm to select the best model parameters.}
+          \resumeItemListEnd        
+
+
+  %     \resumeProjectHeading
+  %       {\textbf{Building a K-Nearest Neighbor Classifier from Scratch}}{June 2021 - July 2021}
+  %   \resumeItemListStart
+  %      \resumeItem{Implemented a full k-NN machine learning pipeline in Python without using external libraries} 
+ %       \resumeItem{Provided automatic selection of best parameters and result evaluation}
+ %     \resumeItemListEnd     
+    \resumeSubHeadingListEnd
+
 %-----------CERTIFICATIONS-----------
-\section {CERTIFICATIONS}
-    \resumeSubheading
-      {AWS Certified Solutions Architect}{Anticipated Feb. 2022}
-      {Associate Level}{}    
+%\section {CERTIFICATIONS}
+%    \resumeSubheading
+%      {AWS Certified Solutions Architect}{Anticipated Feb. 2022}
+%      {Associate Level}{}    
+%      {Foundations of Data Science}{Aug. 2020}
+%      {Coursera}{}  
 
 %    \resumeSubheading
-%      {AWS Certified Developer}{April 2022}
+%      {AWS Solutions Architect}{Anticipated June 2022}
 %      {Associate Level}{}  
 %-----------EDUCATION-----------
-%\section {EDUCATION}
+%\section {CERTIFICATIONS}
 %  \resumeSubHeadingListStart
-%    \resumeSubheading
-%     {M.S. Data Science and Financial Technology}{Oct. 2020 -- Mar. 2023}
-%       {University of London}{Remote}
-%      	\resumeItemListStart
+    %\resumeSubheading
+     %{M.S. Data Science and Financial Technology}{Oct. 2020 -- Sept. 2023}
+       %{University of London}{Remote}
+      	%\resumeItemListStart
     	%\resumeItem {Coursework: Applied Statistics, Linear Algebra, Regression Analysis, Financial Markets and Modeling, Blockchain Programming}
-%        \resumeItemListEnd
-  
+        %\resumeItemListEnd
+%    \resumeSubheading
+%     {Certified Solutions Architect}{Expected Dec. 2023}
+%     {AWS}{}
+
+%    \resumeSubheading
+%     {SQL Fundamentals}{Nov. 2022}
+%      {Dataquest.io}{}  
+
+%    \resumeSubheading
+%     {Foundations of Data Science}{Aug. 2020}
+%      {Coursera}{}  
+
+%    \resumeSubheading
 %    \resumeSubheading
 %      {B.A. Psychology}{}
 %      {Sonoma State University}{Cotati, CA}    
