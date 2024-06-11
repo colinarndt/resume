@@ -4,4 +4,4 @@ LaTeX resume created on Overleaf.com. Based off of [harshibar/resume](https://gi
 
 Feel free to copy and modify for your own use
 
-![Resume Preview](Resume2023.png)
+![Resume Preview](Resume2024.png)
