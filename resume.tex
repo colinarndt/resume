@@ -91,6 +91,10 @@
 % Ensure that generate pdf is machine readable/ATS parsable
 % \pdfgentounicode=1
 
+% --- ADDED FOOTER HERE ---
+\fancyfoot[C]{\small\color{dark-grey} Made with \LaTeX}
+% -------------------------
+
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
@@ -141,8 +145,12 @@
 
 %----------HEADING----------
 \begin{center}
+    \vspace{7pt}
+
     \textbf{\Huge Colin Arndt} \\ \vspace{5pt}
     \small 
+     Quantitative Engineer | Charlotte, NC  \\ \vspace{5pt} 
+    
     \faPhone \hspace{2pt}{858.281.3748} \hspace{1pt}|
     \hspace{1pt} \faEnvelope \hspace{3pt}{colin.f.arndt@gmail.com} \hspace{1pt}| 
     %\hspace{1pt}{Charlotte, NC}
@@ -152,78 +160,116 @@
     %\hspace{1pt} \faGithub   \hspace{3pt}{github.com/colinarndt}  
 
 
-    \vspace{-3pt}
+    \vspace{7pt}
 \end{center}
 
 %-----------SUMMARY-----------
 \section {SUMMARY}
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-      
+ 
+       Quantitative Software Engineer with an M.S. in Data Science \& Financial Technology (4.0 GPA equivalent) and 4+ years of experience engineering production-grade financial data systems. Bridging the gap between quantitative modeling and scalable software infrastructure, with strong experience building backend Python applications, migrating databases to Snowflake, supporting critical data platforms, and using best practices for building with AI tools. Technical excellence and rigorous attention to detail combine with strong leadership and communication, consistently delivering solutions that improve operational efficiency and team productivity. 
 
-       Quantitative Developer proficient in programming, mathematical modeling, and data analysis, with a track record of developing scalable, maintainable models for financial applications. Demonstrated history of delivering innovative solutions, coupled with effective leadership, mentoring and communication skills.  
-    }}
+        }}
+
  \end{itemize}
 
 %-----------PROGRAMMING SKILLS-----------
+    \vspace{-11pt}
 
  \begin{itemize}[leftmargin=0in, label={}]
-    \small{\item{
-     %\textbf{Skills}{: Financial data modelling, Cloud migrations, OOP, SDLC, Automation, AI \& Machine learning, Mentoring}\vspace{2pt} \\
-     \textbf{Tools}{: Python, R, Perl, SQL (MS, Oracle, Hive, Postgres), Spark, Linux, Shell scripting, AWS, Airflow, Snowflake, LaTeX}}} 
-     %Docker, AWS, MATLAB
+    \small{\item{     
+
+\textbf{Programming}{: Python (FastAPI, Pandas, SQLModel), Java, C\#, SQL, BASH, LaTeX}
+
+\textbf{Cloud \& DevOps}{: AWS, Snowflake, Spark, Airflow, Docker, GitLab CI/CD}
+
+\textbf{Databases}{: Snowflake, SQL Server, PostgreSQL, Hive, MongoDB}}}
+
  \end{itemize}
- 
+     \vspace{-11pt}
+
 %-----------EXPERIENCE-----------
 \section{PROFESSIONAL EXPERIENCE}
   \resumeSubHeadingListStart
 
       \resumeSubheading
-      {Quantitative Developer}{Nuveen, a TIAA Company}
-      {1/2024 -- present}{Charlotte, NC - Hybrid}
+      {Quantitative Software Engineer}{Ally}
+      {3/2025 -- present}{Charlotte, NC - Hybrid}
       \resumeItemListStart
-        \resumeItem{Engineered \& productionized ESG scoring models using Python \& Pandas, including unit testing, following CICD processes, production support, and refactoring as needed.}     
-              \resumeItem{Collaborated with analysts on model testing \& validation, investigating output errors \& refining statistical methods.}
-               \resumeItem{Implementing data quality process in ingestion pipeline, to alert team of data errors prior to model runs.}               \resumeItem{Worked with manager to revamp team documentation, accelerating new developer onboarding and productivity.}
 
-        %\resumeItem{Collaborated with data science consultants to improve imputation, using KNN and CatBoost ML algorithms.}
-        %\resumeItem{Developing an NLP text extraction application to return related metrics for user-provided keywords from research documents.}
-          
+        \resumeItem{Led backend development of FMA-API v2 in FastAPI, a platform providing auditability for datasets consumed by the company's primary auto loss forecasting model, delivering a simplified architecture that will accelerate feature releases and on-boarding of new processes.}
+
+\resumeItem{Optimized ingestion workflow using modern Pandas vectorized operations, reducing upload times by about 70\%.}
+
+\resumeItem{Migrated 125 tables from SQL Server to Snowflake with full validation to ensure data integrity.}
+
+\resumeItem{Built a reusable data migration tool with intelligent schema mapping, parallel loading, and row-level validation of migrated data - reducing migration \& validation time from days to less than 1 hour.}
+
+\resumeItem{Optimized client-side Spark config used by model developers to reduce cluster resource waste}
+
+\resumeItem{Led development team's adoption of enterprise-supported AI coding tools in the IDE, dramatically cutting time to develop new features, unit tests and documentation.}
+
+
+
+        
       \resumeItemListEnd
-    
-    %\vspace{-20pt}
+       % \vspace{7pt}
+
+      \resumeSubheading
+      {Financial Developer II}{Nuveen, a TIAA Company}
+      {1/2024 -- 3/2025}{Charlotte, NC - Hybrid}
+      \resumeItemListStart
+        \resumeItem{Engineered ESG scoring models with Python \& Pandas in AWS EMR, including unit testing, CICD procedures, production support, and optimizations.}     
+        \resumeItem{Tested and validated model output, investigating output errors \& refining calculation functions.}
+        \resumeItem{Implemented data quality process in ingestion pipeline, to alert team of data errors prior to model runs.}
+\resumeItem{Migrated approximately 100 Mongo collections to Postgres tables, and refactored Java applications for new backend.}
+\resumeItem{Enhanced Java application Gradle builds to enable SonarQube code coverage reporting.} 
+               
+    \resumeItemListEnd
     
     \resumeSubheading
-      {Cloud Developer}{Nuveen, a TIAA Company}
-      {1/2022 -- 1/2024} {Charlotte, NC - Hybrid}
-      \resumeItemListStart
-        \resumeItem{Production support of a mission critical Front Office Equity trading and research platform, comprising Python and Perl utilities in AWS EC2 / Linux.}
-                 \resumeItem{Built and productionized a key Leverage Finance report showing debt leverages of portfolio companies, allowing PMs to evaluate holding health on a weekly basis, after working with API vendor to enhance data richness.}
+      {Financial Developer I}{Nuveen, a TIAA Company}
+      {1/2022 -- 1/2024}{Charlotte, NC - Hybrid}
+        \resumeItemListStart
+
         \resumeItem{Developed Python data validator for a data warehouse migration from Oracle to Snowflake, capable of efficiently validating millions of rows from daily batch loads. Adopted by multiple teams, saving QA analysts hours per week.}
+         \resumeItem{Migrated legacy Middle Office accounting application to AWS QuickSight, saving \$25,000+ in annual license fees.}    
          \resumeItem{Presented above applications to 200 associates in Nuveen Tech and consulted on implementation in other teams.}
-         \resumeItem{Migrated legacy Middle Office accounting application to AWS QuickSight for querying archived data, saving over \$25,000 annually in license fees.}
-         \resumeItem{Oversaw mentorship program for new rotational associates and sent regular surveys to assess associate experience.}
-        \vspace{-12pt}
-         \resumeItem{Worked with HR to develop a SharePoint site to improve associate onboarding, collaboration and communication.}   
+         \resumeItem{Oversaw a mentorship program for new associates and sent regular surveys to assess associate experience.}
+         \resumeItem{Developed a SharePoint site in collaboration with HR to improve associate on-boarding and communication.}   
+        
+      \resumeItemListEnd
+      
+          \vspace{17pt}
+    
+    \resumeSubheading
+      {IT Consultant}{Independent}
+      {10/2019 -- 12/2021}{Remote}
+      \resumeItemListStart
+        \resumeItem{Automated routine procedures in Python to increase operational efficiency.}
+        \resumeItem{Consulted on solutions for data backups and security, virtualization, kiosk devices, VPNs and more}
+        \resumeItem{Developed responsive web solutions while implementing SEO best practices to increase visibility.}
+        
         
       \resumeItemListEnd
 
-    %\vspace{-10pt}
+    %\vspace{-7pt}
 
     \resumeSubheading
-      {IT Consultant}{Independent}
-      {06/2012 -- 12/2021}{Eugene, OR}
+      {Lead Technician, Manager}{Mac Tonic}
+      {11/2015 -- 10/2019}{Eugene, OR}
       \resumeItemListStart
-        \resumeItem{Data management and backup solutions / Web development \& SEO / Process automation through Python}
-        %\resumeItem{Data management and backup solutions}
-        %\resumeItem{Web development and Search Engine Optimization}
-
-          
+        \resumeItem{Trained and oversaw 5-person technician team, while automating diagnostic procedures to save technician time.}
+        \resumeItem{Automated and streamlined diagnostic procedures, yielding higher service profits and lower turnaround times.}
+       \resumeItem{Overhauled service documentation system resulting in lower incidence of customer issue recurrence.}
+        
       \resumeItemListEnd
-
   \resumeSubHeadingListEnd
+    % \vspace{-7pt}
 
 %-----------EDUCATION-----------
+
 
 \section {EDUCATION}
   \resumeSubHeadingListStart
@@ -233,15 +279,11 @@
         \vspace{-22pt}
         \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-       GPA: 4.0. Coursework in Applied Statistics, Logistic Regression, Econometrics, Financial Modeling, ML \& Big Data.  
+       GPA: 4.0 equivalent. Including Applied Statistics, Financial Markets, Econometrics \& Financial Modeling, ML \& Big Data.
     }}
  \end{itemize}
- 
+     \vspace{-5pt}
 
-      	%\resumeItemListStart
-    	%\resumeItem {}
-        %\resumeItemListEnd
-        
    \resumeSubheading
       {B.A. Psychology}{Sonoma State University}
       {}{}    
@@ -252,9 +294,6 @@
        GPA: 3.8  
     }}
  \end{itemize}
-          	%\resumeItemListStart
-    	%\resumeItem {}
-        %\resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
@@ -262,6 +301,19 @@
 
 \section{PROJECTS}
     \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+         {\textbf{\faGithub \, \href{https://github.com/colinarndt/masters-capstone}{Master’s Capstone: Open-Source LLMs for Forecasting Stock
+Returns via News Sentiment Analysis}}}{June 2021 - July 2021}
+        \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+       Demonstrated open-source, small LLMs are capable of extracting profitable trading signals from news headlines. Quantized Llama 3 models achieved a 42.4\% annualized return and 1.55 Sharpe ratio for the sample period, significantly outperforming the S\&P 500 benchmark, while performing inference inside a 10GB RAM footprint on consumer-grade hardware. These models benchmarked competitively against fine-tuned FinGPT variants, FinBERT and foundation models including GPT and DeepSeek V3.}
+
+    }}
+ \end{itemize} 
+
+
+    
         \resumeProjectHeading
          {\textbf{\faGithub \, \href{https://github.com/colinarndt/time-series-analysis-econometrics}{Econometric Analysis and Forecasting Models}}}{June 2021 - July 2021}
         \begin{itemize}[leftmargin=0in, label={}]
@@ -269,33 +321,46 @@
        Demonstrated a variety of econometric and time-series modeling techniques, with testing of model effectiveness.  
     }}
  \end{itemize} 
-          
-          %\resumeProjectHeading
-          %{\textbf{Building a Neural Network in TensorFlow to Predict Real Estate Prices}} {Nov. 2020 -- Dec. 2020}
-    %\vspace{-14pt}
-        %\begin{itemize}
-        %[leftmargin=0in, label={}]
-    %\small{\item{
-      %  Engineered a neural network layer-by-layer in TensorFlow to predict real estate valuations based on public data.
-    %}}
-     %\end{itemize} 
-            %\resumeItem{Wrote a grid search algorithm to select best model parameters.}
 
+\vspace{-7pt}
           \resumeProjectHeading
-          {\textbf{\href{https://github.com/colinarndt/long-term-stock-bond-allocation}{\faGithub \,  Examining US Stock and Bond Returns since 1793 to Assess the 60-40 Portfolio Allocation}}} {Nov. 2020 -- Dec. 2020}
+          {\textbf{\href{https://github.com/colinarndt/long-term-stock-bond-allocation}{\faGithub \, Back-testing Retirement Portfolio Allocations using 230 Years of US Market Data }}} {Nov. 2020 -- Dec. 2020}
                  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-        Implemented a portfolio simulator based on inflation-adjusted returns over 35-year accumulation periods.
+        Implemented a portfolio simulator calculating inflation-adjusted returns over 35-year investment periods.
     }}
      \end{itemize} 
-         
-            %\resumeItem{Built a variety of interactive plots to present insights into market history as well as retirement portfolio simulations.}
 
-          
-            
+\vspace{-7pt}
+            \resumeProjectHeading
+               {\textbf{Building a Neural Network in TensorFlow to Predict Real Estate Prices}} {Nov. 2020 -- Dec. 2020}
+    \vspace{-14pt}
+        \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+        Engineered a neural network layer-by-layer, with a custom grid search algorithm to find optimal hyperparameters.}}
+     \end{itemize} 
+     
     \resumeSubHeadingListEnd
 
 
+%-----------CERTIFICATIONS-----------
+\section {CERTIFICATIONS}
+
+   \resumeSubheading
+     {Heartsaver CPR \& AED}{Oct. 2025}
+     {American Heart Association}{}  
+
+    \resumeSubheading
+     {Machine Learning in Production}{June 2024}
+     {DeepLearning.AI}{}  
+   
+   \resumeSubheading
+    {SQL Fundamentals}{Nov. 2022}
+     {Dataquest.io}{}  
+
+   \resumeSubheading
+    {Foundations of Data Science}{Aug. 2020}
+     {Coursera}{}  
 
 
 %-------------------------------------------
